@@ -1,0 +1,512 @@
+/* GENERAL */
+
+/* Import Googel Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+/* Reset all margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set font family for the whole page */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #e9ff99;
+  background-image:
+        radial-gradient(at 9% 89%, hsla(215, 90%, 73%, 1) 0px, transparent 50%),
+        radial-gradient(at 72% 6%, hsla(331, 74%, 64%, 1) 0px, transparent 50%),
+        radial-gradient(at 24% 19%, hsla(14, 90%, 74%, 1) 0px, transparent 50%),
+        radial-gradient(at 65% 6%, hsla(6, 79%, 76%, 1) 0px, transparent 50%),
+        radial-gradient(at 20% 98%, hsla(316, 72%, 64%, 1) 0px, transparent 50%),
+        radial-gradient(at 44% 9%, hsla(40, 96%, 77%, 1) 0px, transparent 50%),
+        radial-gradient(at 10% 9%, hsla(76, 65%, 63%, 1) 0px, transparent 50%);
+}
+
+/* Set smooth scrolling for the page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Set color for paragraph */
+p {
+  color: rgb(85, 85, 85);
+}
+
+/* TRANSITION */
+
+/* Set transition for links and buttons */
+a,
+.btn {
+  transition: all 300ms ease;
+}
+
+/* DESKTOP NAV */
+
+/* Set display for navigation and navigation links */
+nav,
+.nav-links {
+  display: flex;
+}
+
+/* Set style for navigation */
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+}
+
+/* Set style for navigation links */
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+/* Set style for links */
+a {
+  color: black;
+  text-decoration: none;
+  text-decoration-color: white;
+}
+
+/* Set style for links on hover */
+a:hover {
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(181, 181, 181);
+}
+
+/* Set style for logo */
+.logo {
+  font-size: 2rem;
+}
+
+/* Set style for logo on hover */
+.logo:hover {
+  cursor: default;
+}
+
+/* HAMBURGER MENU */
+
+/* Set display for hamburger menu */
+#hamburger-nav {
+  display: none;
+}
+
+/* Set style for hamburger menu */
+.hamburger-menu {
+  position: relative;
+  display: inline-block;
+}
+
+/* Set style for hamburger icon */
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+}
+
+/* Set style for hamburger icon span */
+.hamburger-icon span {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transition: all 0.3 ease-in-out;
+}
+
+/* Set style for menu links */
+.menu-links {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3 ease-in-out;
+}
+
+/* Set style for menu link anchors */
+.menu-links a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: none;
+  transition: all 0.3 ease-in-out;
+}
+
+/* Set style for menu link list items */
+.menu-links li {
+  list-style: none;
+}
+
+/* Set style for open menu links */
+.menu-links.open {
+  max-height: 300px;
+}
+
+/* Set style for open hamburger icon spans */
+.hamburger-icon.open span:first-child {
+  transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+  transform: rotate(-45deg) translate(10px, -5px);
+}
+
+/* Set style for hamburger icon spans */
+.hamburger-icon span:first-child {
+  transform: none;
+}
+
+.hamburger-icon span:first-child {
+  opacity: 1;
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
+}
+
+/* SECTIONS */
+
+/* Set style for all sections */
+section {
+  padding-top: 4vh;
+  height: 96vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
+
+/* Set display for section containers */
+.section-container {
+  display: flex;
+}
+
+/* PROFILE SECTION */
+
+/* Set style for profile section */
+#profile {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 90vh;
+}
+
+/* Set style for profile picture container */
+.section__pic-container {
+  display: flex;
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+/* Set style for profile section text */
+.section__text {
+  align-self: center;
+  text-align: center;
+}
+
+/* Set style for profile section text paragraphs */
+.section__text p {
+  font-weight: 600;
+}
+
+/* Set style for profile section text paragraph 1 */
+.section__text__p1 {
+  text-align: center;
+}
+
+/* Set style for profile section text paragraph 2 */
+.section__text__p2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+/* Set style for title */
+.title {
+  font-size: 3rem;
+  text-align: center;
+}
+
+/* Set style for socials container */
+#socials-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+/* ICONS */
+
+/* Set style for icons */
+.icon {
+  cursor: pointer;
+  height: 2rem;
+}
+
+/* BUTTONS */
+
+/* Set style for button container */
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Set style for buttons */
+.btn {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+}
+
+/* Set style for button colors */
+.btn-color-1,
+.btn-color-2 {
+  border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+/* Set style for button colors on hover */
+.btn-color-1:hover,
+.btn-color-2:hover {
+  cursor: pointer;
+}
+
+/* Set style for button color 1*/
+.btn-color-1,
+.btn-color-2:hover {
+  background: rgb(53, 53, 53);
+  color: white;
+}
+
+/* Set style for button color 1 on hover */
+.btn-color-1:hover {
+  background: rgb(0, 0, 0);
+}
+
+/* Set style for button color 2 */
+.btn-color-2 {
+  background: none;
+}
+
+/* Set style for button color 2 on hover */
+.btn-color-2:hover {
+  border: rgb(255, 255, 255) 0.1rem solid;
+}
+
+/*Set gap for button container */
+.btn-container {
+  gap: 1rem;
+}
+
+/* ABOUT SECTION */
+
+/* Set style for about section */
+#about {
+  position: relative;
+}
+
+/* Set style for about container */
+.about-containers {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+/* Set style for about details container */
+.about-details-container {
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Set style for about picture and details container */
+.about-containers,
+.about-details-container {
+  display: flex;
+}
+
+/* Set style for about picture */
+.about-pic {
+  border-radius: 2rem;
+}
+
+/* Set style for arrow */
+.arrow {
+  position: absolute;
+  right: -5rem;
+  bottom: 2.5rem;
+}
+
+/* Set style for details container */
+.details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+}
+
+/* Set gap for section container */
+.section-container {
+  gap: 4rem;
+  height: 80%;
+}
+
+/* Set style for profile picture container */
+.section__pic-container {
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+/* EXPERIENCE SECTION */
+
+/* Set style for experience section */
+#experience {
+  position: relative;
+}
+
+/* Set style for experience sub-title */
+.experience-sub-title {
+  color: rgb(85, 85, 85);
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+/* Set style for experience details container */
+.experience-details-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Set style for article container */
+.article-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
+}
+
+/* Set style for articles */
+article {
+  display: flex;
+  width: 10rem;
+  justify-content: space-around;
+  gap: 0.5rem;
+}
+
+/* Set style for article icons */
+article .icon {
+  cursor: default;
+}
+
+/* PROJECTS SECTION */
+
+/* Set style for projects section */
+#projects {
+  position: relative;
+}
+
+/* Set style for color container */
+.color-container {
+  border-color: rgb(163, 163, 163);
+  background: rgb(250, 250, 250);
+}
+
+/* Set style for project image */
+.project-img {
+  border-radius: 2rem;
+  width: 90%;
+  height: 90%;
+}
+
+/* Set style for project title */
+.project-title {
+  margin: 1rem;
+  color: black;
+}
+
+/* Set style for project button */
+.project-btn {
+  color: black;
+  border-color: rgb(163, 163, 163);
+}
+
+/* CONTACT */
+
+/* Set style for contact section */
+#contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+}
+
+/* Set style for contact info upper container */
+.contact-info-upper-container {
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  background: (250, 250, 250);
+  margin: 2rem auto;
+  padding: 0.5rem;
+}
+
+/* Set style for contact info container */
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem;
+}
+
+/* Set style for contact info paragraph */
+.contact-info-container p {
+  font-size: larger;
+}
+
+/* Set style for contact info icons */
+.contact-icon {
+  cursor: default;
+}
+
+/* Set style for email icon */
+.email-icon {
+  height: 2.5rem;
+}
+
+/* FOOTER SECTION */
+
+/* Set style for footer section */
+footer {
+  height: 26vh;
+  margin: 0 1rem;
+}
+
+/* Set style for footer paragraph */
+footer p {
+  text-align: center;
+}
